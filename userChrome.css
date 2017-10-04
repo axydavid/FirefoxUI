@@ -1,0 +1,216 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+#back-button {
+list-style-image: var(--back-button-image);
+-moz-image-region: auto !important;
+border-radius: 0 !important;
+padding: 0 !important;
+padding-inline-start: 4px !important;
+background-position-x: 2px !important;
+padding-inline-end: 0 !important;
+background: radial-gradient(circle, #F6F6F6 64%,transparent 36%);  
+margin-right: -20px !important;
+list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAb0lEQVQ4jWNgwAN8fX0DfH19A/CpwQm8vLwSfHx8/vv4+Pz38vJKIFuzj4/Pf29v7w2UaP7g5eVlMMQ0E4O9vb3PMzAwQKKKVM0wTB0DKPDCA0KBeD4gIECAqEAcEoYQn5RxGNJAsgEMDJAoJpQTAWaexwyACKF0AAAAAElFTkSuQmCC)!important;
+}
+
+ #back-button[disabled="true"]:hover { 
+
+ background: radial-gradient(circle, #F6F6F6 64%,transparent 36%) !important;  
+background-position-x: 2px !important;
+
+ }
+
+#back-button .toolbarbutton-icon 
+{
+	background-color: transparent !important;
+}
+#back-button:hover
+{
+	background: radial-gradient(circle, #DADADA 64%,transparent 36%) !important;  
+background-position-x: 2px !important;
+
+}
+
+/*
+#PanelUI-menu-button {
+	list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALElEQVQ4jWNgGHDg4+PT4OPj859M3MBAgeb/Pj4+/yl3wcCD0UCkAhgNRAYAnQ8JzGUf/kIAAAAASUVORK5CYII=)!important;
+}
+
+#downloads-button {
+
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATklEQVQ4jWNgoBG4wMDA8B8NnyfFAHTNMDxqAC0NeIBHEy78ANmABBI1f2BgYDBAdwWxhmDVTKwheDXDgAFUIVmacRlCkmZ0Q8jSTDQAAF7jY0tV6VdVAAAAAElFTkSuQmCC)!important;
+
+}
+#appMenu-quit-button { display:none !important; }
+
+*/
+
+  /* FORWARD BUTTON */
+
+.tab-background[selected="true"]{
+	margin-top: 2px;
+}
+ #forward-button[disabled="true"] { 
+padding-left: 0px !important;
+margin-right: -33.5px !important;
+opacity: 0 !important;
+visibility:hidden !important;
+ }
+ #forward-button{
+	list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcUlEQVQ4jWNgoBXw8vIy8PHxqQ8ICBAgV/N7Hx+f/97e3udJNsTb27vAx8fnPwyTa8gC+hri4+NzAVkxLozTEGI0IxmygfoGeHt7PyDSgAtEByZ6INJVcwHZmhkYIEnZ29v7A1makQ3x8fFpIEszKQAAoQWoCeyfArUAAAAASUVORK5CYII=)!important;
+	transition: all .1s linear !important;
+	padding-left: 11px !important;
+	margin-right: -21px !important;
+ }
+  #forward-button .toolbarbutton-icon {
+    transition: all .1s ease-in-out !important;
+    border: 1px solid #B3B3B3 !important;
+    border-radius: 1px 0px 0px 0px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    box-shadow: inset 12px 0px 13px -14px #B3B3B3;
+    padding-left: 9.5px !important;
+    width: 31px !important;
+    padding-right: 3.5px !important;
+    background: #F6F6F6;
+    z-index: 0 !important;
+    position: absolute !important;
+}
+ #forward-button:hover .toolbarbutton-icon { 
+     background: #DADADA !important;
+ }
+  #reload-button { 
+
+  }
+  #nav-bar-overflow-button .toolbarbutton-icon
+  {
+	  transform: rotate(90deg) !important;
+  }
+.toolbarbutton-1 {
+fill: #4C4C4C !important;
+
+}
+ #identity-box
+{
+    padding-left: 17px !important;
+   background: hsla(0,0%,70%,.3);      
+}
+/* URLBAR */
+  #urlbar {
+height: 24px !important;
+min-height: 19px !important;
+  }
+  #page-action-buttons{
+	  min-height: 28px !important;
+  }
+.urlbar-textbox-container {
+		margin-top: -3px !important;
+
+}
+.urlbar-textbox-container .urlbar-input-box, #identity-icon-labels {
+		margin-top: -1px !important;
+
+}
+  #urlbar[focused] {
+  }
+
+  .tab-close-button { display: none !important; }
+  .tab-line[selected]{ 
+    background-color: #A0A0A0 !important; 
+        height: 1px !important;
+}
+.tabbrowser-tab{
+
+}
+
+
+.toolbarbutton-text:before {
+  text: "Joe's Task:";
+}
+
+#edit-controls, #zoom-controls{
+	height: 15px;
+	
+}
+#edit-controls .toolbarbutton-1 .toolbarbutton-icon, #zoom-controls .toolbarbutton-1 .toolbarbutton-icon{
+width: 18px !important;
+	height: 18px !important;
+
+}
+#edit-controls .toolbarbutton-1 .toolbarbutton-text,#zoom-reset-button, #zoom-controls .toolbarbutton-1 .toolbarbutton-text{
+margin-top: -6px !important;
+}
+#edit-controls .toolbarbutton-1, #zoom-controls .toolbarbutton-1{
+	-moz-box-orient: horizontal!important;
+}
+panelview .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled], [open], :active)), toolbarbutton.subviewbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled], [open], :active)), menu.subviewbutton[_moz-menuactive]:not(:-moz-any([disabled], :active)), menuitem.subviewbutton[_moz-menuactive]:not(:-moz-any([disabled], :active)), .widget-overflow-list .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled], [open], :active)), .toolbaritem-combined-buttons:-moz-any(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled], [open], :active)) {
+    box-shadow: 0px 0px 1px 0px grey inset;
+}
+#customization-panelHolder > #widget-overflow-fixed-list {
+display: initial !important;}
+#titlebar-buttonbox {
+    z-index: 1;
+    -moz-appearance: caret;
+    opacity: 0.01;
+}
+[anonid="type-icon-spacer"]
+{
+	width:0px !important;
+}
+
+#widget-overflow-fixed-list .subviewbutton-nav::after
+{
+/*! background: :black; */
+content: unset !important;
+
+}
+.autocomplete-textbox
+ {
+    margin-top: -5px !important;
+}
+#nav-bar
+{
+	height: 37px !important;
+}
+
+.widget-overflow-list .toolbarbutton-1 {
+    -moz-box-align: center !important;
+    -moz-box-orient: vertical!important;
+	height: 75.4px !important;
+	padding-top: 10px !important;
+	width: 82px !important;
+	}
+.widget-overflow-list .toolbarbutton-1:hover {
+border:1px !important;
+}
+.widget-overflow-list .toolbarbutton-1  > .toolbarbutton-text{
+
+  text: "Joe's Task:";
+  padding-top: 6px;
+  padding-inline-start: 0em !important;
+padding-inline-end: 1px !important;
+}
+.widget-overflow-list .toolbarbutton-1  > .toolbarbutton-icon{
+
+width: 27px !important;
+opacity: 0.8 !important;
+}
+ #widget-overflow-mainView .panel-subview-body {
+    display: grid;
+}
+
+#widget-overflow-mainView .panel-subview-body {
+
+    overflow: unset;
+}
+photonpanelmultiview .panel-subview-body {
+    padding: 6px 10px !important;
+}
+
+#widget-overflow-mainView, .widget-overflow-list, #widget-overflow-fixed-list {
+    min-width: unset !important;
+   /*  max-width: 29em; */
+	width: 266px !important;
+}
+.titlebar-placeholder[type="pre-tabs"] {
+    margin-top: 2px !important;
+}
