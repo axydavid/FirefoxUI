@@ -46,8 +46,9 @@ background-position-x: 2px !important;
 
   /* FORWARD BUTTON */
 
-.tab-background[selected="true"]{
+.tab-background, .tab-content{
 	margin-top: 2px;
+
 }
  #forward-button[disabled="true"] { 
 padding-left: 0px !important;
@@ -213,4 +214,8 @@ photonpanelmultiview .panel-subview-body {
 }
 .titlebar-placeholder[type="pre-tabs"] {
     margin-top: 2px !important;
+}
+:root {
+  --tab-curve-width: 30px !important;
+    --tab-min-height: 10px !important;
 }
