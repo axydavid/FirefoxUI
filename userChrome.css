@@ -123,11 +123,6 @@ min-height: 19px !important;
 
 }
 
-
-.toolbarbutton-text:before {
-  text: "Joe's Task:";
-}
-
 #edit-controls, #zoom-controls{
 	height: 15px;
 	
@@ -216,6 +211,5 @@ photonpanelmultiview .panel-subview-body {
     margin-top: 2px !important;
 }
 :root {
-  --tab-curve-width: 30px !important;
-    --tab-min-height: 10px !important;
+    --tab-min-height: 29px !important;
 }
