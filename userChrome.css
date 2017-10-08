@@ -207,12 +207,6 @@ panelview .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled], [o
   display: initial !important;
 }
 
-#titlebar-buttonbox
-{
-  z-index: 1;
-  -moz-appearance: caret;
-  opacity: 0.01;
-}
 
 [anonid="type-icon-spacer"]
 {
@@ -272,6 +266,22 @@ photonpanelmultiview .panel-subview-body
   width: 266px !important;
 }
 
+/* Close, Minimize, Maximize buttons */
+
+#titlebar-buttonbox, .titlebar-button
+{
+  z-index: 1;
+  -moz-appearance: caret;
+  background-color:transparent !important;
+  transition: all .1s linear !important;
+
+}
+
+.titlebar-button:hover 
+{
+    background-color: Highlight !important;
+}
+
 /* TABS */
 
 .titlebar-placeholder[type="pre-tabs"]
@@ -291,7 +301,7 @@ photonpanelmultiview .panel-subview-body
   z-index: -1;
   pointer-events: none !important;
   transform: translateX(15px);
-  margin-left: -30px !important;
+  margin-left: -29px !important;
   border: none !important;
   content: "" !important;
   width: 30px !important;
@@ -308,7 +318,7 @@ photonpanelmultiview .panel-subview-body
   transform: translate(-15px);
   pointer-events: none !important;
   z-index: -1 !important;
-  margin-right: -30px !important;
+  margin-right: -29px !important;
   border: none !important;
   content: "" !important;
   width: 30px !important;
@@ -342,20 +352,49 @@ photonpanelmultiview .panel-subview-body
   margin-top: 2px !important;
 }
 
-.tabbrowser-tab
-{
-  padding-top: 4px !important;
-}
 
+
+.tabbrowser-tab:first-child .tab-content[selected="true"]
+{
+  padding-left: 7px !important;
+}
 #main-window[sizemode="maximized"] .tabbrowser-tab
 {
   padding-top: 1px !important;
 }
 
+.tabbrowser-tab[beforeselected]::after
+{
+    border-image: linear-gradient(transparent 6px, transparent 6px, transparent calc(100% - 5px), transparent calc(100% - 5px)) !important;
+
+}
+
+.tabbrowser-tab::before {
+    border-left: 1px solid;
+    border-image: linear-gradient(transparent 6px, transparent 6px, transparent calc(100% - 5px), transparent calc(100% - 5px)) !important;
+    border-image-slice: 1 !important;
+    opacity: 0.25 !important;
+
+}
+
+
+.tabbrowser-tab::after {
+    content: "" !important;
+    display: -moz-box !important;
+    border-left: 1px solid;
+    border-image: linear-gradient(transparent 6px, currentColor 6px, currentColor calc(100% - 5px), transparent calc(100% - 5px)) !important;
+    border-image-slice: 1 !important;
+    opacity: 0.25 !important;
+
+}
+.tabbrowser-tab[last-visible-tab]::after
+{
+
+}
 .tabbrowser-tabs > .tabbrowser-tab
 {
-  margin-inline-start: 10px !important;
-  margin-inline-end: -10px !important;
+  margin-inline-start: 11px !important;
+  margin-inline-end: -11px !important;
 }
 
 /* TAB CLOSE BUTTON */
@@ -418,4 +457,8 @@ photonpanelmultiview .panel-subview-body
 {
   background-color: #A0A0A0 !important;
 }
-/**/
+/* New Tab Button */
+.tabs-newtab-button
+{
+    margin-left: 9px !important;
+}
