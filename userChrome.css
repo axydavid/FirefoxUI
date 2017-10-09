@@ -400,10 +400,7 @@ photonpanelmultiview .panel-subview-body
 /* TAB CLOSE BUTTON */
 /*[[TC]]*/
 
-.tab-close-button
-{
-  display: none !important;
-}
+ .tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; }
 
 /* RELOAD BUTTON */
 /*[[RB]]*/
