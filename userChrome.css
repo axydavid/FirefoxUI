@@ -301,7 +301,7 @@ photonpanelmultiview .panel-subview-body
   z-index: -1;
   pointer-events: none !important;
   transform: translateX(15px);
-  margin-left: -29px !important;
+  margin-left: -30px !important;
   border: none !important;
   content: "" !important;
   width: 30px !important;
@@ -347,17 +347,8 @@ photonpanelmultiview .panel-subview-body
   margin-top: -1px !important;
 }
 
-.tab-background, .tab-content
-{
-  margin-top: 2px !important;
-}
 
 
-
-.tabbrowser-tab:first-child .tab-content[selected="true"]
-{
-  padding-left: 7px !important;
-}
 #main-window[sizemode="maximized"] .tabbrowser-tab
 {
   padding-top: 1px !important;
@@ -399,7 +390,6 @@ photonpanelmultiview .panel-subview-body
 
 /* TAB CLOSE BUTTON */
 /*[[TC]]*/
-
  .tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; }
 
 /* RELOAD BUTTON */
@@ -439,6 +429,25 @@ photonpanelmultiview .panel-subview-body
   opacity: 0.8;
 }
 
+/* TAB CONTENT ALIGNMENT */
+.tab-background, .tab-content
+{
+  margin-top: 2px !important;
+}
+
+.tabbrowser-tab:first-child .tab-content[selected="true"]
+{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+
+}
+
+.tab-content[selected="true"]
+{
+    padding-left: 10px !important;
+
+}
+
 /* ALL TABS BUTTON */
 /*[[ATB]]*/
 
@@ -458,4 +467,5 @@ photonpanelmultiview .panel-subview-body
 .tabs-newtab-button
 {
     margin-left: 9px !important;
+  visibility: hidden !important;
 }
