@@ -294,6 +294,27 @@ photonpanelmultiview .panel-subview-body
   --tab-min-height: 29px !important;
 }
 
+
+/* TAB CONTENT ALIGNMENT */
+.tab-background, .tab-content
+{
+  margin-top: 2px !important;
+}
+/*
+.tabbrowser-tab:first-child .tab-content[selected="true"]
+{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+
+}
+
+.tab-content[selected="true"]
+{
+    padding-left: 10px !important;
+
+}
+*/
+
 /* CURVED TABS */
 /*[[CT]]*/
 .tabbrowser-tab[selected="true"]::before
@@ -390,7 +411,11 @@ photonpanelmultiview .panel-subview-body
 
 /* TAB CLOSE BUTTON */
 /*[[TC]]*/
- .tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; }
+ /*
+.tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; } 
+*/
+.tabbrowser-tab .tab-close-button { display:none !important; }
+
 
 /* RELOAD BUTTON */
 /*[[RB]]*/
@@ -429,24 +454,6 @@ photonpanelmultiview .panel-subview-body
   opacity: 0.8;
 }
 
-/* TAB CONTENT ALIGNMENT */
-.tab-background, .tab-content
-{
-  margin-top: 2px !important;
-}
-
-.tabbrowser-tab:first-child .tab-content[selected="true"]
-{
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-
-}
-
-.tab-content[selected="true"]
-{
-    padding-left: 10px !important;
-
-}
 
 /* ALL TABS BUTTON */
 /*[[ATB]]*/
