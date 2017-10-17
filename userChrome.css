@@ -412,9 +412,9 @@ photonpanelmultiview .panel-subview-body
 /* TAB CLOSE BUTTON */
 /*[[TC]]*/
  /*
-.tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; } 
-*/
 .tabbrowser-tab .tab-close-button { display:none !important; }
+*/
+.tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; } 
 
 
 /* RELOAD BUTTON */
