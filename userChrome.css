@@ -1,31 +1,35 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-/* DO NOT CHANGE THESE */
-.toolbarbutton-1
+
+/* TAB CLOSE BUTTON */
+/*[[TC]]*/
+ /*
+.tabbrowser-tab .tab-close-button { display:none !important; }
+*/
+.tabbrowser-tab:not([selected="true"]) .tab-close-button { display:none !important; }
+
+/* NIGHTLY FIX */
+/*
+#tabbrowser-tabs .box-inherit
 {
-  fill: #4C4C4C !important;
+  margin-left: 11px !important;
 }
-
-#urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity
+.tabbrowser-tab[selected="true"]::before
 {
-  --urlbar-separator-color: rgba(18, 188, 0, 1)!important;
-  background: rgba(18,186,0,.2) !important;
+  position: absolute !important;
+  top:-4px !important;
 }
+*/
+/* Close, Minimize, Maximize buttons */
 
-#nav-bar-overflow-button .toolbarbutton-icon
+#titlebar-buttonbox, .titlebar-button
 {
-  transform: rotate(90deg) !important;
-}
+  z-index: 1;
+  -moz-appearance: caret;
+  background-color:transparent !important;
+  transition: all .1s linear !important;
+  /* opacity: 0.1 !important; */
 
-.widget-overflow-list .toolbarbutton-1  > .toolbarbutton-icon
-{
-  opacity: 0.8 !important;
-}
 
-/* TAB LINE COLOR */
-
-.tab-line[selected]
-{
-  background-color: black !important;
 }
 
 /* IDENTITY BOX COLOR */
@@ -196,7 +200,6 @@
     margin-top: -10px !important;
 
 }
-
 #edit-controls .toolbarbutton-1, #zoom-controls .toolbarbutton-1
 {
   -moz-box-orient: horizontal!important;
@@ -271,16 +274,7 @@ photonpanelmultiview .panel-subview-body
   width: 266px !important;
 }
 
-/* Close, Minimize, Maximize buttons */
 
-#titlebar-buttonbox, .titlebar-button
-{
-  z-index: 1;
-  -moz-appearance: caret;
-  background-color:transparent !important;
-  transition: all .1s linear !important;
-
-}
 
 .titlebar-button:hover 
 {
@@ -305,28 +299,22 @@ photonpanelmultiview .panel-subview-body
 {
   margin-top: 2px !important;
 }
-/*
-.tabbrowser-tab:first-child .tab-content[selected="true"]
+
+
+/* TAB LINE COLOR */
+.tab-line[selected]
 {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-
+  background-color: #A0A0A0 !important;
 }
-
-.tab-content[selected="true"]
-{
-    padding-left: 10px !important;
-
-}
-*/
 
 /* CURVED TABS */
 /*[[CT]]*/
+
 .tabbrowser-tab[selected="true"]::before
 {
-  z-index: -1;
+  z-index: -1 !important;
   pointer-events: none !important;
-  transform: translateX(15px);
+  transform: translate(15px); 
   margin-left: -30px !important;
   border: none !important;
   content: "" !important;
@@ -414,15 +402,6 @@ photonpanelmultiview .panel-subview-body
   margin-inline-end: -11px !important;
 }
 
-/* TAB CLOSE BUTTON */
-/*[[TC]]*/
- /*
-.tabbrowser-tab .tab-close-button { display:none !important; }
-.tabbrowser-tab[selected="true"] .tab-close-button { display: visible !important; } 
-
-*/
-.tabbrowser-tab:not([selected="true"]) .tab-close-button { display:none !important; }
-
 
 /* RELOAD BUTTON */
 /*[[RB]]*/
@@ -477,13 +456,31 @@ photonpanelmultiview .panel-subview-body
     pointer-events: none !important;
 }
 
-/* TAB LINE COLOR */
-.tab-line[selected]
-{
-  background-color: #A0A0A0 !important;
-}
 /* New Tab Button */
 .tabs-newtab-button
 {
     margin-left: 9px !important;
 }
+
+/* DO NOT CHANGE THESE */
+.toolbarbutton-1
+{
+  fill: #4C4C4C !important;
+}
+
+#urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity
+{
+  --urlbar-separator-color: rgba(18, 188, 0, 1)!important;
+  background: rgba(18,186,0,.2) !important;
+}
+
+#nav-bar-overflow-button .toolbarbutton-icon
+{
+  transform: rotate(90deg) !important;
+}
+
+.widget-overflow-list .toolbarbutton-1  > .toolbarbutton-icon
+{
+  opacity: 0.8 !important;
+}
+
