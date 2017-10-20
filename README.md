@@ -1,6 +1,7 @@
 # FirefoxUI hybrid
 Missing old firefox?
 This theme is a combination between australis UI and photon UI, hopefully you'll like it :D
+
 ![Screenshot](screenshotmain2.PNG)
 
 # IMPORTANT!!!
