@@ -59,6 +59,11 @@
   margin-right: 6px !important;
 }
 
+.titlebar-placeholder[type="pre-tabs"] 
+{
+    border-inline-end: 0px solid !important;
+}
+
 
 /* Nav Buttons */
 /*[[NB]]*/
