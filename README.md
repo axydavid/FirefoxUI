@@ -5,4 +5,4 @@ This theme is a combination between australis UI and photon UI, hopefully you'll
 
 # IMPORTANT!!!
 Please make sure to customize the order of your buttons as indicated in the image before you install skin:
-![Screenshot](image.PNG)
+![Screenshot](image.png)
