@@ -187,9 +187,14 @@
   height: 18px !important;
 }
 
-#edit-controls .toolbarbutton-1 .toolbarbutton-text,#zoom-reset-button, #zoom-controls .toolbarbutton-1 .toolbarbutton-text
+#zoom-reset-button, #zoom-controls .toolbarbutton-1 .toolbarbutton-text
 {
   margin-top: -6px !important;
+}
+#edit-controls .toolbarbutton-1 .toolbarbutton-text
+{
+    margin-top: -10px !important;
+
 }
 
 #edit-controls .toolbarbutton-1, #zoom-controls .toolbarbutton-1
