@@ -472,6 +472,11 @@ photonpanelmultiview .panel-subview-body
   margin-right: -75px !important;
 }
 
+.titlebar-placeholder[type="post-tabs"]
+{
+    pointer-events: none !important;
+}
+
 /* TAB LINE COLOR */
 .tab-line[selected]
 {
