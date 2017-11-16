@@ -16,7 +16,7 @@ This theme is a combination between australis UI and photon UI, hopefully you'll
 
   *Please note that this does NOT apply to Firefox Stable, Beta and Developer channels, it ONLY applies to Nightly channel.*
   
-- If you experience any issues or you have a preference which is not included in the skin, open an [Issue](https://github.com/axydavid/FirefoxUI/issues/new), and I'll have a look at it, you can also cantact me via [Reddit](https://www.reddit.com/user/axy_david/).
+- If you experience any issues or you have a preference which is not included in the skin, open an [Issue](https://github.com/axydavid/FirefoxUI/issues/new), and I'll have a look at it, you can also contact me via [Reddit](https://www.reddit.com/user/axy_david/).
 
 # Screenshots
 ![Screenshot](screenshot1.PNG)
