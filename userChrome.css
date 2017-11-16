@@ -316,6 +316,10 @@
   margin-inline-start: 11px !important;
   margin-inline-end: -11px !important;
 }
+#tabbrowser-tabs .box-inherit
+{
+  margin-right: 14px !important;
+}
 
 
 /* RELOAD BUTTON */
