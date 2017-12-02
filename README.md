@@ -5,7 +5,7 @@ This theme is a combination between australis UI and photon UI, hopefully you'll
 ![Screenshot](screenshotmain2.PNG)
 
 # IMPORTANT!!!
-- Copy the userChrome.css file to your firefox profile chrome folder 
+- Copy the [userChrome.css file](https://raw.githubusercontent.com/axydavid/FirefoxUI/master/userChrome.css) (right-click -> Save Link As...) to your firefox profile chrome folder.
 
 ![Screenshot](instructions.jpg)
 
