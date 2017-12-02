@@ -5,8 +5,9 @@ This theme is a combination between australis UI and photon UI, hopefully you'll
 ![Screenshot](screenshotmain2.PNG)
 
 # IMPORTANT!!!
-- Copy the userChrome.css file to your firefox profile chrome folder [Tutorial](http://kb.mozillazine.org/index.php?title=UserChrome.css&printable=yes)
-(%appdata%\Mozilla\Firefox\Profiles\YourProfileName\chrome)
+- Copy the userChrome.css file to your firefox profile chrome folder 
+
+![Screenshot](instructions.jpg)
 
 
 - Please make sure to customize the order of your buttons as it shows in the image below, before you install skin:
