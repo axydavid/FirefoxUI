@@ -13,6 +13,8 @@ This theme is a combination between australis UI and photon UI, hopefully you'll
 - Please make sure to customize the order of your buttons as it shows in the image below, before you install skin:
 
 ![Screenshot](screenshotrules.png)
+- Restart Firefox.
+
 - Due to the experimental nature of Nightly Mozilla tends to break the theme, if you use Nightly uncomment the section: 
   /* NIGHTLY FIX */
 
